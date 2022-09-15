@@ -4,8 +4,14 @@
   "description": "![Design preview for the Profile card component coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ./src",
+    "start": "serve ./src",
+    "htmlhint": "htmlhint src/*.html test/*.html",
+    "deploy": "gh-pages -d src",
+    "eslint": "eslint --ext .js src/"
   },
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/magaliMoran/profilecard.git"
@@ -18,5 +24,9 @@
   "homepage": "https://github.com/magaliMoran/profilecard#readme",
   "dependencies": {
     "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.22.0",
+    "gh-pages": "^4.0.0"
   }
 }
