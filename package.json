@@ -2,11 +2,11 @@
   "name": "profilecard",
   "version": "1.0.0",
   "description": "![Design preview for the Profile card component coding challenge](./design/desktop-preview.jpg)",
-  "main": "index.js",
+  "main": "src/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint ./src",
-    "start": "serve ./src",
+    "lint": "eslint src/",
+    "start": "serve src/",
     "htmlhint": "htmlhint src/*.html test/*.html",
     "deploy": "gh-pages -d src",
     "eslint": "eslint --ext .js src/"
